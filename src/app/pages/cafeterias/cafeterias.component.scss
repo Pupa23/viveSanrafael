@@ -1,0 +1,134 @@
+//header
+.top-banner-section {
+  font-family: 'Amatic SC', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 350px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-content: center;
+  justify-content: center;
+
+  .banner-image-div {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .banner-overlay-div {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .banner-text-div {
+    grid-area: 1/1/2/2;
+    justify-content: center;
+    width: 50%;
+    height: 30%;
+    transform: translate(47%, 100%);
+  }
+}
+
+.banner-image {
+  display: grid;
+  min-width: 350px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner-overlay-div {
+  display: grid;
+  max-width: 100%;
+  background: black;
+  background: linear-gradient(
+      60deg,
+      rgba(0, 0, 0, 0.7777485994397759) 30%,
+      rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.banner-text-div {
+  display: grid;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  background: rgba(0,0,0,.8);
+}
+
+.banner-h1-text {
+  font-size: calc(25pt + 0.15vw);
+  letter-spacing: 0.05em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+.card {
+  color: white;
+  transition-duration: .3s;
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+  border-radius: 0px;
+
+  &:hover img {
+    transition-duration: .3s;
+    filter: grayscale(70%);
+    opacity: .7
+  }
+
+  &:hover span {
+    color: white;
+    background-color: rgba(0,0,0,.8);
+    display: block;
+    transition-duration: .3s;
+  }
+}
+
+.card-title {
+  color: white;
+  background-color: rgba(0,0,0,.8);
+  width: 95%;
+  text-align: center;
+  position:absolute;
+  top: 50%;
+  display: none;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 2em;
+  text-shadow: 1px 5px 10px black;
+  transition-duration: .3s;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-duration: .3s;
+  max-width: 100%;
+  display: block;;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .card-title {
+    color: white;
+    background-color: rgba(0,0,0,.8);
+    width: 95%;
+    text-align: center;
+    position:absolute;
+    top: 50%;
+    display: block;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 1px 5px 10px black;
+    transition-duration: .3s;
+  }
+}

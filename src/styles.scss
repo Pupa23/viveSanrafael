@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+body
+{
+  margin: 0;
+  font-family: 'Nunito', sans-serif !important;
+}
+
+@media (max-width: 800px) {
+  //Menu
+
+  .menu {
+    display: none;
+  }
+
+  .header-mio {
+    display: block !important;
+  }
+  .sidebarIconToggle {
+    visibility: visible !important;
+  }
+}
+
+.container {
+  font-size: 13px;
+  .show {
+    font-size: 13px;
+  }
+}
+
+.bg-dark {
+  background-color: #3a79b8 !important;
+}
+
+.dropdown-menu {
+  left: unset;
+}
+
+.btn-circle {
+  border: none;
+  border-radius: 50%;
+  width: 3.75rem;
+  height: 3.76rem;
+
+  ion-icon {
+    font-size: 40px
+  }
+}
+
+@media (min-width: 991.99px) {
+  .btn-circle{
+    display: none;
+  }
+
+  .menu-mio{
+    background: #3a79b8 !important;
+    border: none !important;
+    .dropdown-item {
+      color: white !important;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .font-weight-bold{
+    display: none !important;
+  }
+}
+
+
+
+
+
+
