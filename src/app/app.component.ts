@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {MessageService} from './services/message.service';
+import {ColorHeaderService} from './color-header.service';
 // import * as swe from 'sweetalert';
 
 @Component({
@@ -9,7 +10,7 @@ import {MessageService} from './services/message.service';
 })
 export class AppComponent {
 
-  constructor(public messageService: MessageService) {}
+  constructor(public messageService: MessageService, private colorHeader: ColorHeaderService) {}
 
 
   contactForm(form) {

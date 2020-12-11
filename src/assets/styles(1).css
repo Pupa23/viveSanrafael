@@ -1857,7 +1857,7 @@ span.end_index {
   height: 120px;
   background: #101014;
   z-index: 2;
-  right: calc(50% - 15px);
+  right: calc(50%);
 }
 .segva-swiper .segva-swiper-nav .swiper-button-prev {
   left: auto;

@@ -18,7 +18,25 @@
                               <div class="segva-slider  slider-style-three">
                                 <div class="swiper-container swiper-slides segva-swiper swiper-keyboard swiper-container-initialized swiper-container-horizontal" data-loop="false" data-interval="5000" data-effect="slide" data-speed="1000" data-mousedrag="true" data-swiper="container">
                                   <div class="swiper-wrapper" style="transform: translate3d(-5709px, 0px, 0px); transition-duration: 0ms;">
-
+                                    <!-- SLIDER 3-->
+                                    <div class="swiper-slide swiper-slide-next" style="background-image: url(&quot;https://victorthemes.com/themes/segovia/wp-content/uploads/2019/12/banner-bg-11.png&quot;); width: 1903px;">
+                                      <div class="segva-slider-caption">
+                                        <div class="segva-table-wrap">
+                                          <div class="segva-align-wrap">
+                                            <div class="row align-items-center">
+                                              <div class="col-md-6">
+                                                <div class="banner-caption caption-wrap">
+                                                  <h2 class="slider-caption-title animated slider-caption-title-two" data-animation="fadeInUp" style="text-shadow: 1px 15px rgba(16,16,20,0.3);background-image: url(https://victorthemes.com/themes/segovia/wp-content/uploads/2019/12/title-after1.png);">GUÍA</h2>
+                                                  <div class="segva-border-link animated" data-animation="fadeInUp"><a routerLink="/guia" class="segva-link"><i class="fa fa-angle-down" aria-hidden="true"></i> Guía sanrafaelina </a></div>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6 slider-featured-image"> <img src="./assets/banner-featured-11.jpg" alt=""></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- END SLIDER 3-->
                                     <!--  SLIDER 1-->
                                     <div class="swiper-slide" style="background-image: url(&quot;https://victorthemes.com/themes/segovia/wp-content/uploads/2019/12/banner-bg-7.png&quot;); width: 100%;">
                                       <div class="segva-slider-caption">
@@ -28,7 +46,7 @@
                                               <div class="col-md-6">
                                                 <div class="banner-caption caption-wrap">
                                                   <h2 class="slider-caption-title animated slider-caption-title-two" data-animation="fadeInUp" style="text-shadow: 1px 15px rgba(16,16,20,0.30);background-image: url(https://victorthemes.com/themes/segovia/wp-content/uploads/2019/12/title-after1.png);">EVENTOS</h2>
-                                                  <div class="segva-border-link animated" data-animation="fadeInUp"><a href="https://victorthemes.com/themes/segovia/home-v4/#0" class="segva-link"><i class="fa fa-angle-down" aria-hidden="true"></i> <h3>Próximos eventos </h3></a></div>
+                                                  <div class="segva-border-link animated" data-animation="fadeInUp"><a href="https://victorthemes.com/themes/segovia/home-v4/#0" class="segva-link"><i class="fa fa-angle-down" aria-hidden="true"></i> Próximos eventos </a></div>
                                                 </div>
                                               </div>
                                               <div class="col-md-6 slider-featured-image"> <img src="./assets/banner-featured-7.jpg" alt=""></div>
@@ -51,7 +69,7 @@
                                                   <div class="segva-border-link animated" data-animation="fadeInUp">
                                                     <a href="#" class="segva-link">
                                                       <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                                      <h3>Club de beneficios</h3>
+                                                      Club de beneficios
                                                     </a>
                                                   </div>
                                                 </div>
@@ -64,25 +82,6 @@
                                     </div>
                                     <!-- END SLIDER 2-->
 
-                                    <!-- SLIDER 3-->
-                                    <div class="swiper-slide swiper-slide-next" style="background-image: url(&quot;https://victorthemes.com/themes/segovia/wp-content/uploads/2019/12/banner-bg-11.png&quot;); width: 1903px;">
-                                      <div class="segva-slider-caption">
-                                        <div class="segva-table-wrap">
-                                          <div class="segva-align-wrap">
-                                            <div class="row align-items-center">
-                                              <div class="col-md-6">
-                                                <div class="banner-caption caption-wrap">
-                                                  <h2 class="slider-caption-title animated slider-caption-title-two" data-animation="fadeInUp" style="text-shadow: 1px 15px rgba(16,16,20,0.3);background-image: url(https://victorthemes.com/themes/segovia/wp-content/uploads/2019/12/title-after1.png);">GUÍA</h2>
-                                                  <div class="segva-border-link animated" data-animation="fadeInUp"><a routerLink="/guia" class="segva-link"><i class="fa fa-angle-down" aria-hidden="true"></i> <h3>Guía sanrafaelina</h3> </a></div>
-                                                </div>
-                                              </div>
-                                              <div class="col-md-6 slider-featured-image"> <img src="./assets/banner-featured-11.jpg" alt=""></div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <!-- END SLIDER 3-->
                                   </div>
 
                                   <!--                                  REDES SOCIALES-->
@@ -103,8 +102,8 @@
                                   <!--                                  Flechas slider-->
 
                                   <div class="segva-swiper-nav">
-                                    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>
-                                    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+                                    <div (click)="prevSlide()" class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>
+                                    <div (click)="nextSlide()" class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
                                   </div>
 
                                   <!--                                    FIN FLECHAS SLIDER-->
