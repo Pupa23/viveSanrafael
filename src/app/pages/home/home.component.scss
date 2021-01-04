@@ -3,11 +3,11 @@ section {
 }
 .bg {
   color: black;
-  height: 250px;
+  height: 200px;
   & h1 {
-    padding: 6rem 0;
-    text-align: center;
-    font-weight: 600;
+    padding: 5rem 1rem;
+    font-weight: 800;
+    text-shadow: 1px 15px rgba(16,16,20,0.3);
   }
 }
 
