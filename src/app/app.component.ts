@@ -10,7 +10,7 @@ import {ColorHeaderService} from './color-header.service';
 })
 export class AppComponent {
 
-  constructor(public messageService: MessageService, private colorHeader: ColorHeaderService) {}
+  constructor(public messageService: MessageService, public colorHeader: ColorHeaderService) {}
 
 
   contactForm(form) {
